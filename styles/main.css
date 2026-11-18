@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #141414;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 25px 8%;
+  background: #0d0d0d;
+}
+
+.logo {
+  color: #a296d4;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main {
+  width: 84%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.search-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.search-section h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  background: linear-gradient(
+    90deg,
+    rgba(162, 150, 212, 0.71) 0%,
+    rgba(89, 82, 199, 1) 93%,
+    rgba(162, 150, 212, 0.71) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-section p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #a296d4;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.movie-card {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.movie-info {
+  display: block;
+  padding: 15px;
+  color: #fff;
+}
+
+.movie-info h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.movie-info p {
+  margin-top: 5px;
+  color: #aaa;
+}
+
+.message {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #aaa;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 92%;
+    margin: 35px auto;
+  }
+
+  .search-section h2 {
+    font-size: 27px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .movie-card img {
+    height: 220px;
+  }
+}

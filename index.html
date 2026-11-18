@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">MovieSearch</h1>
+    </header>
+
+    <main class="main">
+        <section class="search-section">
+            <h2>Find <span class="highlight">Movies</span> You`ll like Without the Hassle</h2>
+            <p>Search for movies and TV shows in real-time</p>
+
+            <input type="text" id="searchInput" placeholder="Enter movie title..." autocomplete="off">
+        </section>
+
+        <section class="results-section">
+            <div id="results" class="movies-grid"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
