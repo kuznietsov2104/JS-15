@@ -211,6 +211,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .modal.active {
+    align-items: baseline;
+  }
   .modal-content {
     padding: 25px 18px;
   }
